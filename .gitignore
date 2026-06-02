@@ -1,0 +1,65 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+venv/
+.venv/
+env/
+
+# macOS
+
+.DS_Store
+
+# IDEs
+
+.vscode/
+.idea/
+
+# Streamlit
+
+.streamlit/secrets.toml
+
+# Environment variables
+
+.env
+
+# Logs
+
+*.log
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Build artifacts
+
+build/
+dist/
+*.egg-info/
+
+# Coverage
+
+.coverage
+htmlcov/
+
+# Pytest
+
+.pytest_cache/
+
+# Mac zip artifacts
+
+__MACOSX/
+
+# Temporary files
+
+*.tmp
+*.swp
+
+# SQLite
+
+*.db
+*.sqlite3
