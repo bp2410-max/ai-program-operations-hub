@@ -1,0 +1,33 @@
+[
+  {
+    "id": "WKR-2026-06-01",
+    "week_of": "2026-06-01",
+    "created_at": "2026-06-01T09:00:00",
+    "updated_at": "2026-06-01T09:00:00",
+    "author": "Portfolio Operations",
+    "highlights": [
+      "Identity Modernization workforce SSO pilot reached 92 percent enrollment with no severity-one incidents.",
+      "Mobile Redesign remains on track for the external beta design-partner cohort.",
+      "Analytics Platform Upgrade improved staging query performance by 34 percent."
+    ],
+    "risks": [
+      "Cloud Migration customer API cutover rehearsal exceeded the planned maintenance window.",
+      "AI Search Rollout enterprise corpus expansion is waiting on permission-aware indexing review.",
+      "Analytics Platform Upgrade production backfill may saturate shared compute capacity."
+    ],
+    "blockers": [
+      "API Services approval is needed for the revised Cloud Migration cutover sequence.",
+      "Security approval is needed for AI Search permission-aware document indexing.",
+      "Cloud Infrastructure must reserve an isolated compute pool for analytics backfill testing."
+    ],
+    "actions": [
+      "Review the split Cloud Migration cutover plan and rollback rehearsal results by June 9.",
+      "Complete AI Search permission regression testing by June 15.",
+      "Reserve analytics backfill capacity and validate saturation alerts by June 17."
+    ],
+    "decisions": [
+      "Approve the temporary Cloud Migration dual-run budget exception by June 11.",
+      "Confirm whether AI Search can proceed with a restricted enterprise beta corpus."
+    ]
+  }
+]

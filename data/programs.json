@@ -1,0 +1,299 @@
+[
+  {
+    "id": "PRG-001",
+    "company": "Acme Cloud",
+    "name": "AI Search Rollout",
+    "team": "AI Platform",
+    "owner": "Maya Chen",
+    "sponsor": "SVP, Product & AI",
+    "portfolio": "AI & Customer Experience",
+    "status": "At Risk",
+    "phase": "Limited Availability",
+    "progress": 58,
+    "risk_score": 52,
+    "schedule_slip_days": 5,
+    "executive_escalation": false,
+    "start_date": "2026-01-19",
+    "target_date": "2026-09-25",
+    "budget_m": 5.6,
+    "summary": "Launch retrieval-augmented search across Acme Cloud documentation and the customer console, with permission-aware results, relevance telemetry, and a controlled enterprise rollout.",
+    "next_milestone": "Approve enterprise beta after relevance and security review",
+    "next_milestone_date": "2026-06-18",
+    "executive_attention": "Confirm whether enterprise beta can proceed with a restricted document corpus while the security review closes.",
+    "recovery": {
+      "primary_driver": "Permission-aware document indexing has not completed Security review.",
+      "blocking_dependency": "Security approval for permission-aware document indexing",
+      "risk_owner": "Maya Chen",
+      "next_action": "Complete permission regression testing and decide whether to launch the restricted enterprise beta.",
+      "eta_to_unblock": "2026-06-15",
+      "path_to_green": "Security signs off on the validated corpus, relevance scorecards stay within beta thresholds, and risk score drops below 30.",
+      "escalation_needed": "No"
+    },
+    "stakeholder_callouts": {
+      "TPM / Program Manager": {
+        "care_about": "The enterprise beta gate depends on a Security approval and a stable relevance scorecard.",
+        "action": "Drive the Security review, track corpus scope decisions, and publish a beta-readiness checkpoint.",
+        "deadline": "2026-06-15",
+        "path_to_green": "Close permission testing and reduce the risk score below 30."
+      },
+      "Engineering Manager": {
+        "care_about": "Permission-aware indexing must prevent documents from leaking across enterprise access boundaries.",
+        "action": "Complete regression tests for validated sources and close remaining indexing defects.",
+        "deadline": "2026-06-15",
+        "path_to_green": "Security test coverage passes and indexed permissions match source permissions."
+      },
+      "Customer Support Manager": {
+        "care_about": "Support needs to understand the restricted beta scope and likely search-quality questions.",
+        "action": "Prepare beta FAQs and route access or relevance incidents to the AI Platform triage queue.",
+        "deadline": "2026-06-18",
+        "path_to_green": "Support playbooks are published and beta feedback is reviewed weekly."
+      },
+      "Product Manager": {
+        "care_about": "The beta launch may need a smaller document corpus to protect the committed date.",
+        "action": "Approve restricted corpus scope and confirm launch messaging for enterprise beta users.",
+        "deadline": "2026-06-15",
+        "path_to_green": "Launch scope is approved with clear expansion criteria."
+      },
+      "Leadership / Executive team": {
+        "care_about": "The rollout is recoverable without a broad launch delay if scope remains controlled.",
+        "action": "Support the restricted beta decision if Security testing does not close by the gate.",
+        "deadline": "2026-06-15",
+        "path_to_green": "Approve a controlled beta and expand only after Security sign-off."
+      }
+    }
+  },
+  {
+    "id": "PRG-002",
+    "company": "Acme Cloud",
+    "name": "Cloud Migration",
+    "team": "Cloud Infrastructure",
+    "owner": "Noah Williams",
+    "sponsor": "CTO",
+    "portfolio": "Infrastructure Modernization",
+    "status": "Critical",
+    "phase": "Migration Wave 2",
+    "progress": 46,
+    "risk_score": 84,
+    "schedule_slip_days": 12,
+    "executive_escalation": true,
+    "start_date": "2025-10-13",
+    "target_date": "2026-08-28",
+    "budget_m": 8.9,
+    "summary": "Move customer-facing API and analytics workloads from the legacy hosting footprint to the standardized cloud landing zone while meeting availability and cost targets.",
+    "next_milestone": "Approve revised API Services cutover sequence",
+    "next_milestone_date": "2026-06-09",
+    "executive_attention": "Approve the revised cutover sequence and temporary dual-run budget before the June maintenance window.",
+    "recovery": {
+      "primary_driver": "The API Services cutover rehearsal exceeded the maintenance window and requires a split migration plan.",
+      "blocking_dependency": "API Services approval for the revised customer API cutover sequence",
+      "risk_owner": "Noah Williams",
+      "next_action": "Approve the split cutover plan after rollback rehearsal review and fund temporary dual-run capacity.",
+      "eta_to_unblock": "2026-06-11",
+      "path_to_green": "Approve the two-wave sequence, preserve rollback coverage, complete the first cutover successfully, and reduce the risk score below 30.",
+      "escalation_needed": "Yes"
+    },
+    "stakeholder_callouts": {
+      "TPM / Program Manager": {
+        "care_about": "The migration is blocked on the API cutover sequence, budget exception, and maintenance-window readiness.",
+        "action": "Run the steering decision, confirm owners for rollback rehearsal findings, and track the vendor bridge.",
+        "deadline": "2026-06-11",
+        "path_to_green": "Secure approvals and complete the first cutover wave within the revised window."
+      },
+      "Engineering Manager": {
+        "care_about": "The cutover rehearsal overran by 47 minutes and needs a validated rollback path.",
+        "action": "Split the workload sequence, rerun the rollback rehearsal, and validate production telemetry.",
+        "deadline": "2026-06-09",
+        "path_to_green": "Demonstrate a cutover plan that fits the maintenance window with tested rollback."
+      },
+      "Customer Support Manager": {
+        "care_about": "Customer API availability may be affected during two migration windows instead of one.",
+        "action": "Prepare customer-impact messaging, escalation routing, and support bridge coverage.",
+        "deadline": "2026-06-09",
+        "path_to_green": "Support readiness is confirmed for both windows with clear incident routing."
+      },
+      "Product Manager": {
+        "care_about": "Temporary dual-run spend is required to preserve customer rollback coverage.",
+        "action": "Approve the time-boxed budget exception and communicate tradeoffs to Finance.",
+        "deadline": "2026-06-11",
+        "path_to_green": "Fund rollback protection through the second cutover wave."
+      },
+      "Leadership / Executive team": {
+        "care_about": "The program is Red because customer-facing migration risk and budget decisions need executive alignment.",
+        "action": "Approve the revised sequence and dual-run budget exception.",
+        "deadline": "2026-06-11",
+        "path_to_green": "Resolve the decision blockers and review the first successful cutover wave."
+      }
+    }
+  },
+  {
+    "id": "PRG-003",
+    "company": "Acme Cloud",
+    "name": "Identity Modernization",
+    "team": "Security",
+    "owner": "Priya Singh",
+    "sponsor": "CISO",
+    "portfolio": "Security & Trust",
+    "status": "On Track",
+    "phase": "Pilot",
+    "progress": 67,
+    "risk_score": 22,
+    "schedule_slip_days": 0,
+    "executive_escalation": false,
+    "start_date": "2025-12-08",
+    "target_date": "2026-08-14",
+    "budget_m": 4.1,
+    "summary": "Replace the legacy authentication stack with a unified identity service supporting enterprise SSO, stronger session controls, and auditable access policies.",
+    "next_milestone": "Complete workforce SSO pilot and go-live review",
+    "next_milestone_date": "2026-06-21",
+    "executive_attention": "No escalation required.",
+    "stakeholder_callouts": {
+      "TPM / Program Manager": {
+        "care_about": "The SSO pilot is healthy, with two legacy adapters still tracked as planned work.",
+        "action": "Maintain the pilot exit checklist and confirm adapter completion dates.",
+        "deadline": "2026-06-20",
+        "path_to_green": "Keep the risk score below 30 and complete adapter validation."
+      },
+      "Engineering Manager": {
+        "care_about": "Audit events and adapter behavior must remain consistent as pilot usage grows.",
+        "action": "Complete adapter testing and review authentication telemetry.",
+        "deadline": "2026-06-20",
+        "path_to_green": "Pass adapter validation with no severity-one authentication defects."
+      },
+      "Customer Support Manager": {
+        "care_about": "Support should be ready for account-access questions as SSO adoption expands.",
+        "action": "Validate account recovery guidance and escalation routing.",
+        "deadline": "2026-06-21",
+        "path_to_green": "Support playbooks cover SSO enrollment and recovery scenarios."
+      },
+      "Product Manager": {
+        "care_about": "The pilot is progressing toward the planned go-live review.",
+        "action": "Confirm pilot exit criteria and enterprise rollout messaging.",
+        "deadline": "2026-06-21",
+        "path_to_green": "Approve go-live after pilot exit criteria pass."
+      },
+      "Leadership / Executive team": {
+        "care_about": "The program is Green with no current escalation required.",
+        "action": "Monitor the go-live review outcome.",
+        "deadline": "2026-06-21",
+        "path_to_green": "Maintain current delivery trajectory."
+      }
+    }
+  },
+  {
+    "id": "PRG-004",
+    "company": "Acme Cloud",
+    "name": "Mobile Redesign",
+    "team": "Mobile",
+    "owner": "Elena Rodriguez",
+    "sponsor": "VP, Product Experience",
+    "portfolio": "Customer Experience",
+    "status": "On Track",
+    "phase": "Beta",
+    "progress": 73,
+    "risk_score": 16,
+    "schedule_slip_days": 0,
+    "executive_escalation": false,
+    "start_date": "2026-01-05",
+    "target_date": "2026-07-31",
+    "budget_m": 3.3,
+    "summary": "Deliver a redesigned mobile experience for account administration, usage monitoring, and incident notifications with improved accessibility and performance.",
+    "next_milestone": "Release external beta to design partner cohort",
+    "next_milestone_date": "2026-06-14",
+    "executive_attention": "No escalation required.",
+    "stakeholder_callouts": {
+      "TPM / Program Manager": {
+        "care_about": "The external beta remains on plan while Android notification telemetry is monitored.",
+        "action": "Track telemetry readiness and coordinate design-partner onboarding.",
+        "deadline": "2026-06-14",
+        "path_to_green": "Launch beta on schedule and monitor notification delivery."
+      },
+      "Engineering Manager": {
+        "care_about": "Android delivery telemetry needs complete funnel coverage before beta scale increases.",
+        "action": "Finish instrumentation and validate alert thresholds.",
+        "deadline": "2026-06-13",
+        "path_to_green": "Confirm dashboards and alerts before the external beta."
+      },
+      "Customer Support Manager": {
+        "care_about": "Design partners need a clear path for reporting mobile beta issues.",
+        "action": "Prepare beta support routing and known-issues guidance.",
+        "deadline": "2026-06-14",
+        "path_to_green": "Support intake and escalation procedures are active for beta users."
+      },
+      "Product Manager": {
+        "care_about": "Release scope and customer communication are ready for final sign-off.",
+        "action": "Approve beta scope and design-partner messaging.",
+        "deadline": "2026-06-12",
+        "path_to_green": "Approve scope and proceed with the planned beta cohort."
+      },
+      "Leadership / Executive team": {
+        "care_about": "The program is Green and moving into customer validation.",
+        "action": "Monitor beta adoption and material customer feedback.",
+        "deadline": "2026-06-14",
+        "path_to_green": "Maintain current trajectory through beta."
+      }
+    }
+  },
+  {
+    "id": "PRG-005",
+    "company": "Acme Cloud",
+    "name": "Analytics Platform Upgrade",
+    "team": "Platform Engineering",
+    "owner": "Jordan Patel",
+    "sponsor": "VP, Platform Engineering",
+    "portfolio": "Data Platform",
+    "status": "At Risk",
+    "phase": "Execution",
+    "progress": 54,
+    "risk_score": 61,
+    "schedule_slip_days": 8,
+    "executive_escalation": false,
+    "start_date": "2025-11-17",
+    "target_date": "2026-09-11",
+    "budget_m": 6.2,
+    "summary": "Upgrade the shared analytics platform to improve query performance, telemetry coverage, and dashboard freshness for product, finance, and customer operations.",
+    "next_milestone": "Complete production backfill performance test",
+    "next_milestone_date": "2026-06-24",
+    "executive_attention": "Align Cloud Infrastructure capacity allocation before the production backfill test.",
+    "recovery": {
+      "primary_driver": "Production backfill testing may saturate shared compute capacity.",
+      "blocking_dependency": "Cloud Infrastructure reservation for an isolated compute pool",
+      "risk_owner": "Jordan Patel",
+      "next_action": "Reserve the isolated compute pool and complete a 25 percent scale rehearsal with saturation alerts.",
+      "eta_to_unblock": "2026-06-17",
+      "path_to_green": "Reserve capacity, pass the rehearsal without customer workload contention, and reduce the risk score below 30.",
+      "escalation_needed": "No"
+    },
+    "stakeholder_callouts": {
+      "TPM / Program Manager": {
+        "care_about": "The backfill performance test is at risk until isolated compute capacity is reserved.",
+        "action": "Drive the capacity commitment and track Finance dashboard reconciliation.",
+        "deadline": "2026-06-17",
+        "path_to_green": "Reserve compute, pass rehearsal, and close metric mismatches."
+      },
+      "Engineering Manager": {
+        "care_about": "Shared compute saturation could impact customer workloads during backfill.",
+        "action": "Configure isolated capacity, validate alerts, and run the 25 percent scale rehearsal.",
+        "deadline": "2026-06-17",
+        "path_to_green": "Demonstrate backfill headroom without customer workload contention."
+      },
+      "Customer Support Manager": {
+        "care_about": "Dashboard freshness or query performance issues could surface during the upgrade.",
+        "action": "Prepare escalation routing for customer analytics incidents.",
+        "deadline": "2026-06-24",
+        "path_to_green": "Support routing is ready and production rehearsal shows no customer impact."
+      },
+      "Product Manager": {
+        "care_about": "Finance dashboards still have metric-definition mismatches during parallel validation.",
+        "action": "Resolve reconciliation decisions with Finance and approve exit criteria.",
+        "deadline": "2026-06-23",
+        "path_to_green": "Close dashboard mismatches and approve validation exit."
+      },
+      "Leadership / Executive team": {
+        "care_about": "The program is Yellow because capacity must be allocated before production testing.",
+        "action": "Support the capacity prioritization if Cloud Infrastructure cannot commit by the ETA.",
+        "deadline": "2026-06-17",
+        "path_to_green": "Secure capacity and complete a clean rehearsal."
+      }
+    }
+  }
+]

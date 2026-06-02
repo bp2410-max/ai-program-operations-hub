@@ -1,0 +1,152 @@
+[
+  {
+    "id": "DEP-001",
+    "program_id": "PRG-001",
+    "dependency": "Permission-aware document indexing approval",
+    "type": "Decision",
+    "factor": "Internal",
+    "blocked_team": "AI Platform",
+    "owner": "Security",
+    "needed_by": "2026-06-15",
+    "status": "At Risk",
+    "impact": "Enterprise beta scope will remain restricted until permission behavior passes review.",
+    "path_to_green": "Security completes permission regression testing for the validated corpus and signs off on the beta access model.",
+    "unblock_eta": "2026-06-15"
+    ,"blocked_since": "2026-05-11"
+  },
+  {
+    "id": "DEP-002",
+    "program_id": "PRG-001",
+    "dependency": "Search relevance evaluation set for API documentation",
+    "type": "Team",
+    "factor": "Internal",
+    "blocked_team": "AI Platform",
+    "owner": "API Services",
+    "needed_by": "2026-06-12",
+    "status": "On Track",
+    "impact": "Required to validate answer quality before the enterprise beta gate.",
+    "path_to_green": "API Services delivers the final labeled evaluation set and AI Platform publishes the relevance scorecard.",
+    "unblock_eta": "2026-06-12"
+    ,"blocked_since": "2026-05-20"
+  },
+  {
+    "id": "DEP-003",
+    "program_id": "PRG-002",
+    "dependency": "Revised customer API cutover sequence",
+    "type": "Decision",
+    "factor": "Internal",
+    "blocked_team": "Cloud Infrastructure",
+    "owner": "API Services",
+    "needed_by": "2026-06-09",
+    "status": "Blocked",
+    "impact": "Migration Wave 2 cannot enter the June maintenance window without an approved sequence.",
+    "path_to_green": "API Services approves the split cutover plan after rollback rehearsal results are reviewed in steering.",
+    "unblock_eta": "2026-06-09"
+    ,"blocked_since": "2026-05-10"
+  },
+  {
+    "id": "DEP-004",
+    "program_id": "PRG-002",
+    "dependency": "Temporary dual-run budget exception",
+    "type": "Decision",
+    "factor": "Internal",
+    "blocked_team": "Cloud Infrastructure",
+    "owner": "Product Management",
+    "needed_by": "2026-06-11",
+    "status": "At Risk",
+    "impact": "Cloud Infrastructure cannot preserve the rollback window without temporary spend coverage.",
+    "path_to_green": "Product Management and Finance approve a time-boxed dual-run budget exception through the second cutover wave.",
+    "unblock_eta": "2026-06-11"
+    ,"blocked_since": "2026-05-19"
+  },
+  {
+    "id": "DEP-005",
+    "program_id": "PRG-003",
+    "dependency": "Legacy API integration adapters",
+    "type": "Team",
+    "factor": "Internal",
+    "blocked_team": "Security",
+    "owner": "API Services",
+    "needed_by": "2026-06-20",
+    "status": "On Track",
+    "impact": "Two customer workflows cannot move to the unified identity service until adapters are complete.",
+    "path_to_green": "API Services finishes adapter testing and Security validates authentication audit events.",
+    "unblock_eta": "2026-06-20"
+    ,"blocked_since": "2026-05-27"
+  },
+  {
+    "id": "DEP-006",
+    "program_id": "PRG-004",
+    "dependency": "Identity SDK release candidate",
+    "type": "Cross-Program",
+    "factor": "Internal",
+    "blocked_team": "Mobile",
+    "owner": "Identity Modernization",
+    "needed_by": "2026-06-10",
+    "status": "On Track",
+    "impact": "Mobile beta needs the new session controls for enterprise account administration.",
+    "path_to_green": "Identity Modernization publishes the release candidate and Mobile completes integration smoke testing.",
+    "unblock_eta": "2026-06-10"
+    ,"blocked_since": "2026-05-24"
+  },
+  {
+    "id": "DEP-007",
+    "program_id": "PRG-004",
+    "dependency": "Beta release scope approval",
+    "type": "Decision",
+    "factor": "Internal",
+    "blocked_team": "Mobile",
+    "owner": "Product Management",
+    "needed_by": "2026-06-12",
+    "status": "On Track",
+    "impact": "Design partner onboarding begins after release scope and known issues are approved.",
+    "path_to_green": "Product Management signs off on the beta release scope and customer communication plan.",
+    "unblock_eta": "2026-06-12"
+    ,"blocked_since": "2026-05-29"
+  },
+  {
+    "id": "DEP-008",
+    "program_id": "PRG-005",
+    "dependency": "Reserved compute pool for production backfill",
+    "type": "Platform",
+    "factor": "Internal",
+    "blocked_team": "Platform Engineering",
+    "owner": "Cloud Infrastructure",
+    "needed_by": "2026-06-17",
+    "status": "At Risk",
+    "impact": "Backfill performance testing will slip or contend with customer workloads without isolated capacity.",
+    "path_to_green": "Cloud Infrastructure reserves the isolated compute pool and Platform Engineering verifies saturation alerts.",
+    "unblock_eta": "2026-06-17"
+    ,"blocked_since": "2026-05-15"
+  },
+  {
+    "id": "DEP-009",
+    "program_id": "PRG-005",
+    "dependency": "Finance dashboard metric reconciliation",
+    "type": "Data",
+    "factor": "Internal",
+    "blocked_team": "Platform Engineering",
+    "owner": "Product Management",
+    "needed_by": "2026-06-23",
+    "status": "On Track",
+    "impact": "Upgrade cannot exit parallel validation until business-critical dashboards reconcile.",
+    "path_to_green": "Product Management and Finance close the remaining metric definition mismatches after parallel validation.",
+    "unblock_eta": "2026-06-23"
+    ,"blocked_since": "2026-05-25"
+  },
+  {
+    "id": "DEP-010",
+    "program_id": "PRG-002",
+    "dependency": "Managed network provider maintenance window confirmation",
+    "type": "Vendor",
+    "factor": "External",
+    "blocked_team": "Cloud Infrastructure",
+    "owner": "Network Transit Vendor",
+    "needed_by": "2026-06-08",
+    "status": "On Track",
+    "impact": "The migration rollback plan requires vendor support coverage during the customer API cutover.",
+    "path_to_green": "The vendor confirms the named support engineer, bridge details, and rollback coverage for the June maintenance window.",
+    "unblock_eta": "2026-06-08"
+    ,"blocked_since": "2026-05-28"
+  }
+]

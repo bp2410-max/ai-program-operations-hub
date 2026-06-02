@@ -1,0 +1,22 @@
+[
+  {
+    "id": "MUP-A1F7CC8F",
+    "submitted_at": "2026-06-01T20:42:19",
+    "program_id": "PRG-001",
+    "program_name": "AI Search Rollout",
+    "submitted_by": "Esha",
+    "stakeholder_role": "TPM / Program Manager",
+    "status": "Green",
+    "blocker": "API Stabilization needed",
+    "eta": "3 weeks",
+    "risk": "Low",
+    "next_action": "Engineering approval needed",
+    "path_to_green": "Once approved can go ahead with plan A",
+    "escalation_needed": "No",
+    "notes": "",
+    "normalized_status": "On Track",
+    "needs_attention": false,
+    "escalation_required": false,
+    "governance_insight": "TPM / Program Manager reported Green status for AI Search Rollout. Blocker: API Stabilization needed. ETA: 3 weeks."
+  }
+]

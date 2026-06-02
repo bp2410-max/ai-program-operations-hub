@@ -1,0 +1,50 @@
+[
+  {
+    "id": "DEC-001",
+    "decision_date": "2026-05-12",
+    "program_id": "PRG-001",
+    "program_name": "AI Search Rollout",
+    "decision": "Delay enterprise beta rollout by 2 weeks",
+    "reason": "API instability and incomplete permission-aware indexing validation",
+    "owner": "AI Platform",
+    "status": "Approved",
+    "follow_up": "Complete regression testing and return to the enterprise beta gate on June 15.",
+    "created_at": "2026-05-12T10:30:00"
+  },
+  {
+    "id": "DEC-002",
+    "decision_date": "2026-05-20",
+    "program_id": "PRG-002",
+    "program_name": "Cloud Migration",
+    "decision": "Split the customer API cutover into two migration windows",
+    "reason": "The full cutover rehearsal exceeded the maintenance window by 47 minutes",
+    "owner": "Cloud Infrastructure",
+    "status": "Approved",
+    "follow_up": "Review rollback rehearsal results and finalize the first cutover window by June 9.",
+    "created_at": "2026-05-20T15:00:00"
+  },
+  {
+    "id": "DEC-003",
+    "decision_date": "2026-05-27",
+    "program_id": "PRG-004",
+    "program_name": "Mobile Redesign",
+    "decision": "Proceed with a 500-customer design partner beta",
+    "reason": "Crash-free sessions reached 99.6 percent and remaining telemetry gaps are monitorable",
+    "owner": "Product Management",
+    "status": "Approved",
+    "follow_up": "Confirm Android push telemetry alerts before external beta release.",
+    "created_at": "2026-05-27T11:15:00"
+  },
+  {
+    "id": "DEC-004",
+    "decision_date": "2026-06-01",
+    "program_id": "PRG-002",
+    "program_name": "Cloud Migration",
+    "decision": "Request a temporary dual-run budget exception",
+    "reason": "Rollback coverage must remain active through the second customer API cutover wave",
+    "owner": "Product Management",
+    "status": "Pending",
+    "follow_up": "Obtain Finance and executive approval by June 11.",
+    "created_at": "2026-06-01T09:30:00"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "RSK-001",
+    "program_id": "PRG-001",
+    "title": "Enterprise document permissions are not consistently indexed",
+    "category": "Security",
+    "risk_type": "Existing",
+    "severity": "High",
+    "probability": "Medium",
+    "owner": "Maya Chen",
+    "team_callouts": ["AI Platform", "Security", "Product Management"],
+    "mitigation": "Restrict the beta corpus to validated sources and complete permission test coverage with Security before expanding access.",
+    "due_date": "2026-06-15",
+    "status": "Escalated"
+    ,"identified_date": "2026-04-18"
+  },
+  {
+    "id": "RSK-002",
+    "program_id": "PRG-001",
+    "title": "Search relevance quality varies across technical domains",
+    "category": "Quality",
+    "risk_type": "Potential",
+    "severity": "Medium",
+    "probability": "Medium",
+    "owner": "Owen Kim",
+    "team_callouts": ["AI Platform", "API Services", "Customer Support"],
+    "mitigation": "Tune retrieval weights using the API Services evaluation set and publish weekly relevance scorecards.",
+    "due_date": "2026-06-19",
+    "status": "Mitigating"
+    ,"identified_date": "2026-05-26"
+  },
+  {
+    "id": "RSK-003",
+    "program_id": "PRG-002",
+    "title": "API Services cutover exceeds planned maintenance window",
+    "category": "Schedule",
+    "risk_type": "Existing",
+    "severity": "Critical",
+    "probability": "High",
+    "owner": "Noah Williams",
+    "team_callouts": ["Cloud Infrastructure", "API Services", "Customer Support"],
+    "mitigation": "Split the cutover into two waves, retain dual-run capacity, and complete a rollback rehearsal before steering approval.",
+    "due_date": "2026-06-09",
+    "status": "Escalated"
+    ,"identified_date": "2026-04-11"
+  },
+  {
+    "id": "RSK-004",
+    "program_id": "PRG-002",
+    "title": "Dual-run cloud spend is trending above forecast",
+    "category": "Financial",
+    "risk_type": "Existing",
+    "severity": "High",
+    "probability": "High",
+    "owner": "Avery Brooks",
+    "team_callouts": ["Cloud Infrastructure", "Product Management", "Finance"],
+    "mitigation": "Review workload exit dates weekly and request a time-boxed budget exception for the API Services cutover.",
+    "due_date": "2026-06-11",
+    "status": "Escalated"
+    ,"identified_date": "2026-05-19"
+  },
+  {
+    "id": "RSK-005",
+    "program_id": "PRG-003",
+    "title": "Two legacy integrations still bypass the unified identity service",
+    "category": "Technical Debt",
+    "risk_type": "Potential",
+    "severity": "Medium",
+    "probability": "Medium",
+    "owner": "Priya Singh",
+    "team_callouts": ["Security", "API Services"],
+    "mitigation": "Complete adapter work with API Services and require migration plans before the pilot exit review.",
+    "due_date": "2026-06-20",
+    "status": "Mitigating"
+    ,"identified_date": "2026-05-12"
+  },
+  {
+    "id": "RSK-006",
+    "program_id": "PRG-004",
+    "title": "Push notification delivery telemetry is incomplete on Android",
+    "category": "Observability",
+    "risk_type": "Potential",
+    "severity": "Medium",
+    "probability": "Low",
+    "owner": "Elena Rodriguez",
+    "team_callouts": ["Mobile", "Platform Engineering", "Customer Support"],
+    "mitigation": "Instrument delivery funnel dashboards and verify alert thresholds during the external beta.",
+    "due_date": "2026-06-13",
+    "status": "Monitoring"
+    ,"identified_date": "2026-05-28"
+  },
+  {
+    "id": "RSK-007",
+    "program_id": "PRG-005",
+    "title": "Production backfill may saturate shared compute capacity",
+    "category": "Capacity",
+    "risk_type": "Existing",
+    "severity": "High",
+    "probability": "Medium",
+    "owner": "Jordan Patel",
+    "team_callouts": ["Platform Engineering", "Cloud Infrastructure"],
+    "mitigation": "Reserve an isolated compute pool, add saturation alerts, and run a 25 percent scale rehearsal before the full test.",
+    "due_date": "2026-06-17",
+    "status": "Mitigating"
+    ,"identified_date": "2026-04-24"
+  },
+  {
+    "id": "RSK-008",
+    "program_id": "PRG-005",
+    "title": "Finance dashboards have not completed data reconciliation",
+    "category": "Data Quality",
+    "risk_type": "Potential",
+    "severity": "Medium",
+    "probability": "Medium",
+    "owner": "Jordan Patel",
+    "team_callouts": ["Platform Engineering", "Product Management", "Finance"],
+    "mitigation": "Run parallel validation for five business days and resolve metric definition mismatches with Product Management.",
+    "due_date": "2026-06-23",
+    "status": "Monitoring"
+    ,"identified_date": "2026-05-21"
+  }
+]

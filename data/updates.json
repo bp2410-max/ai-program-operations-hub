@@ -1,0 +1,58 @@
+[
+  {
+    "id": "UPD-001",
+    "program_id": "PRG-001",
+    "date": "2026-05-29",
+    "author": "Maya Chen",
+    "summary": "Internal beta expanded to 240 employees. Search click-through improved after relevance tuning, but enterprise corpus expansion is waiting on permission-aware indexing review."
+  },
+  {
+    "id": "UPD-002",
+    "program_id": "PRG-001",
+    "date": "2026-05-22",
+    "author": "Maya Chen",
+    "summary": "AI Platform and API Services agreed on a documentation evaluation set. Weekly quality scorecards now track relevance, latency, and unanswered queries."
+  },
+  {
+    "id": "UPD-003",
+    "program_id": "PRG-002",
+    "date": "2026-05-30",
+    "author": "Noah Williams",
+    "summary": "Migration Wave 2 is critical. The customer API cutover rehearsal exceeded the maintenance window by 47 minutes, requiring a two-wave sequence and temporary dual-run budget."
+  },
+  {
+    "id": "UPD-004",
+    "program_id": "PRG-002",
+    "date": "2026-05-23",
+    "author": "Noah Williams",
+    "summary": "Twenty-seven of 43 workloads are running in the new cloud landing zone. Analytics workloads are stable; the customer API tier remains the schedule driver."
+  },
+  {
+    "id": "UPD-005",
+    "program_id": "PRG-003",
+    "date": "2026-05-28",
+    "author": "Priya Singh",
+    "summary": "Workforce SSO pilot reached 92 percent enrollment with no severity-one incidents. API Services is completing adapters for two remaining legacy integrations."
+  },
+  {
+    "id": "UPD-006",
+    "program_id": "PRG-004",
+    "date": "2026-05-29",
+    "author": "Elena Rodriguez",
+    "summary": "Internal beta crash-free sessions reached 99.6 percent. Mobile is validating Android push telemetry and preparing a 500-customer design partner release."
+  },
+  {
+    "id": "UPD-007",
+    "program_id": "PRG-005",
+    "date": "2026-05-30",
+    "author": "Jordan Patel",
+    "summary": "Query performance improved 34 percent in staging. Production backfill testing remains at risk until Cloud Infrastructure reserves an isolated compute pool."
+  },
+  {
+    "id": "UPD-008",
+    "program_id": "PRG-005",
+    "date": "2026-05-21",
+    "author": "Jordan Patel",
+    "summary": "Product dashboards completed parallel validation. Finance dashboards identified three metric definition mismatches that are now under reconciliation."
+  }
+]
